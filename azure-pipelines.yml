@@ -17,6 +17,8 @@ steps:
 
 - script: |
     nvm Install
+- task: UseNode@1
+  inputs:
     npm install
     npm run build
   displayName: 'npm install and build'
